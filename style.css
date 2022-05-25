@@ -154,6 +154,7 @@ header div h1:last-child {
     height: 100vh;
     width: 99vw;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #entry article {
@@ -280,7 +281,6 @@ header div h1:last-child {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 20px;
-    min-height: min-content;
 }
 
 #box-sale article img {
