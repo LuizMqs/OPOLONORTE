@@ -162,7 +162,6 @@ header div h1:last-child {
 /* Lançamentos */
 #entry {
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -207,7 +206,6 @@ header div h1:last-child {
 /* Tipos de mochilas */
 #types {
     height: 70vh;
-    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -265,7 +263,6 @@ header div h1:last-child {
     color: rgb(234, 234, 234);
     font-size: 4.5vh;
     letter-spacing: 6px;
-    width: 100vw;
     height: 35vh;
     display: flex;
     flex-direction: column;
@@ -283,7 +280,6 @@ header div h1:last-child {
 
 /* Caixa contendo todas as mochilas da seção */
 #box-sale {
-    width: 100vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -617,7 +613,7 @@ footer h2 {
     #entry article {
         font-size: 3vh;
         height: 50vh;
-        width: 100vw;
+        width: 100%;
     }
 
     #types {
@@ -627,7 +623,7 @@ footer h2 {
 
     #types article {
         height: 40vh;
-        width: 100vw;
+        width: 100%;
     }
 
     #paragraph {
@@ -688,7 +684,7 @@ footer h2 {
 
     footer {
         height: 50vh;
-        width: 100vw;
+        width: 100%;
         text-align: center;
     }
 
