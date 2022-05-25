@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+}
+
+/*Header superior da página*/
+#nav {
+    width: 99vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: fixed;
+    top: 0;
+}
+
+#nav div {
+    display: flex;
+    height: fit-content;
+}
+
+#nav div:last-child {
+    display: flex;
+    width: 40vw;
+}
+
+/* Menu */
+#list li {
+    list-style: none;
+}
+
+
+#list li:hover {
+    color: rgb(234, 234, 234);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#list {
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    width: 40vw;
+    font-size: 18px;
+}
+
+#cart {
+    height: 30px;
+    width: 30px;
+}
+
+header div h1:first-child {
+    color: gray;
+}
+
+header div h1:last-child {
+    color: rgb(234, 234, 234);
+}
+
+/* Primeiro background e position fixed */
+#top-background {
+    background-image: linear-gradient(to bottom, rgba(36, 42, 53, 0.5), rgba(36, 42, 53, 0.6)), url(./images/forest.jpg);
+    height: 100vh;
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal */
+#center-background {
+    color: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    gap: 30px;
+}
+
+#title {
+    font-size: 6vh;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+#chevron-down {
+    height: 100px;
+    width: 100px;
+}
+
+/* Redes sociais */
+#icons {
+    position: fixed;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 200px;
+    width: 100px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#icons svg {
+    height: 40px;
+    width: 40px;
+    fill: rgb(234, 234, 234);
+}
+
+#icons svg:hover {
+    height: 45px;
+    width: 45px;
+    fill: gray;
+    transition: 0.1s;
+}
+
+/* Caixa para entrar em contato no canto inferior direito */
+#chat {
+    height: 60px;
+    width: 250px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 3px;
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+}
+
+#chat:hover {
+    cursor: pointer;
+    background-color: gray;
+    transition: 0.1s;
+}
+
+#chat svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Lançamentos */
+#entry {
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+}
+
+#entry article {
+    height: 100vh;
+    width: 49.5vw;
+    color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vh;
+    letter-spacing: 6px;
+    gap: 30px;
+}
+
+#entry article h2 {
+    font-size: 3vh;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#entry article h2:hover {
+    color: gray;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#entry article:first-child {
+    background-color: black;
+}
+
+#entry article:last-child {
+    background-color: gray;
+    background-image: url(./images/entry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tipos de mochilas */
+#types {
+    height: 70vh;
+    width: 99vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#types article {
+    height: 70vh;
+    width: 33vw;
+    background-image: url(./images/carga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    font-size: 2.3vh;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#types article h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#types article:first-child:hover {
+    background-image: linear-gradient(to bottom, rgba(36, 42, 53, 0.5), rgba(36, 42, 53, 0.6)), url(./images/mochila.jpg);
+}
+
+#types article:last-child:hover {
+    background-image: linear-gradient(to bottom, rgba(36, 42, 53, 0.5), rgba(36, 42, 53, 0.6)), url(./images/viagem.jpg);
+}
+
+#types article:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+    background-image: linear-gradient(to bottom, rgba(36, 42, 53, 0.5), rgba(36, 42, 53, 0.6)), url(./images/carga.jpg);
+}
+
+#types article:first-child {
+    background-image: url(./images/mochila.jpg);
+}
+
+#types article:last-child {
+    background-image: url(./images/viagem.jpg);
+}
+
+/* Caixa de promoções */
+#sale-off {
+    width: 99vw;
+    height: 115vh;
+    background-color: black;
+    min-height: fit-content;
+}
+
+#sale-off header {
+    color: rgb(234, 234, 234);
+    font-size: 4.5vh;
+    letter-spacing: 6px;
+    width: 99vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#sale-off header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    letter-spacing: 2px;
+}
+
+/* Caixa contendo todas as mochilas da seção */
+#box-sale {
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 20px;
+    min-height: min-content;
+}
+
+#box-sale article img {
+    width: 300px;
+    height: 350px;
+}
+
+#box-sale article {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(234, 234, 234);
+}
+
+#box-sale article:hover {
+    background-color: gray;
+    transition: 0.1s;
+    cursor: pointer;
+    color: transparent;
+}
+
+#box-sale article:hover h3 {
+    text-decoration: none;
+}
+
+#box-sale article:hover .invisible {
+    color: white;
+}
+
+#box-sale article h3 {
+    font-size: 13px;
+}
+
+.box-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 300px;
+    height: 150px;
+}
+
+.value {
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+.value h3:first-child {
+    text-decoration: line-through 3px;
+}
+
+.invisible {
+    color: transparent;
+    font-size: 30px;
+    position: absolute;
+}
+
+/* Quem somos */
+#paragraph {
+    height: 90vh;
+    width: 99vw;
+    background-image: url(./images/paragraph.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#paragraph article {
+    height: 90vh;
+    width: 50vw;
+    color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    font-size: 6vh;
+    letter-spacing: 6px;
+    padding-left: 18%;
+    padding-right: 8%;
+    justify-content: center;
+    gap: 18px;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, rgba(36, 42, 53, 0.5), rgba(36, 42, 53, 0.6)), url(./images/paragraph.jpg);
+    background-position: left;
+}
+
+#paragraph article p {
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Seção de contato */
+#contact {
+    height: 80vh;
+    width: 99vw;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact article {
+    height: 80vh;
+    width: 50%;
+    background-color: black;
+}
+
+#contact article:first-child {
+    display: flex;
+    justify-content: center;
+    padding-left: 18vw;
+    flex-direction: column;
+    gap: 5px;
+    backdrop-filter: brightness(40px);
+}
+
+#form-article {
+    color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 5px;
+    margin-top: 6vh;
+}
+
+input {
+    width: 25vw;
+    height: 6vh;
+    border: 3px solid rgb(58, 58, 58);
+    padding-left: 25px;
+    color: rgb(151, 151, 151);
+    font-size: 20px;
+}
+
+input:hover {
+    border: 3px solid gray;
+}
+
+#mens {
+    width: 25vw;
+    height: 17vh;
+}
+
+#btn-sub {
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: rgb(234, 234, 234);
+    background-color: black;
+    border-color: rgb(234, 234, 234);
+    margin-left: 17vw;
+}
+
+#btn-sub:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#contact article:last-child {
+    height: 80vh;
+    width: 50%;
+    color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    font-size: 6vh;
+    letter-spacing: 6px;
+    padding-right: 18%;
+    padding-left: 8%;
+    justify-content: center;
+    gap: 18px;
+    text-align: justify;
+}
+
+#contact article:last-child p {
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Footer da página "Assine nossa lista" */
+footer {
+    height: 50vh;
+    width: 99vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+footer h1 {
+    color: rgb(234, 234, 234);
+    font-size: 8vh;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    color: rgb(234, 234, 234);
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form-footer {
+    display: flex;
+}
+
+#form-footer input {
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(234, 234, 234);
+    display: flex;
+}
+
+#btn-final {
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-left: 5px;
+    color: rgb(234, 234, 234);
+}
+
+#btn-final:hover {
+    border-color: gray;
+    color: gray;
+    transition: 0.1s;
+    cursor: pointer;
+}
